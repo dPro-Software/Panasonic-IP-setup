@@ -105,6 +105,7 @@
 		7406F50D207ED18F00AA0223 /* Panasonic_IP_setupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panasonic_IP_setupUITests.swift; sourceTree = "<group>"; };
 		7406F50F207ED18F00AA0223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PanasonicEasyIPsetupBlueSocket.xcodeproj; path = ../PanasonicEasyIPsetupBlueSocket/PanasonicEasyIPsetupBlueSocket.xcodeproj; sourceTree = "<group>"; };
+		7406F542207ED4AC00AA0223 /* Panasonic IP setup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Panasonic IP setup.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +158,7 @@
 		7406F4EE207ED18C00AA0223 /* Panasonic IP setup */ = {
 			isa = PBXGroup;
 			children = (
+				7406F542207ED4AC00AA0223 /* Panasonic IP setup.entitlements */,
 				7406F4EF207ED18C00AA0223 /* AppDelegate.swift */,
 				7406F4F1207ED18C00AA0223 /* ViewController.swift */,
 				7406F4F3207ED18E00AA0223 /* Assets.xcassets */,
@@ -267,6 +269,11 @@
 				TargetAttributes = {
 					7406F4EB207ED18C00AA0223 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					7406F4FD207ED18F00AA0223 = {
 						CreatedOnToolsVersion = 9.3;
@@ -544,7 +551,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Panasonic IP setup/Panasonic_IP_setup.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Panasonic IP setup/Panasonic IP setup.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7TD9A665TC;
@@ -564,7 +571,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Panasonic IP setup/Panasonic_IP_setup.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Panasonic IP setup/Panasonic IP setup.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7TD9A665TC;

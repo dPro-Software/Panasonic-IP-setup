@@ -7,21 +7,30 @@
 //
 
 import Cocoa
+import PanasonicEasyIPsetupBlueSocket
+import PanasonicEasyIPsetupCore
 
 class ViewController: NSViewController {
-
+	@IBOutlet weak var cameraCountLabel: NSTextField!
+	
+	var manager: Manager?
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		// Do any additional setup after loading the view.
-	}
-
-	override var representedObject: Any? {
-		didSet {
-		// Update the view, if already loaded.
+		do {
+			let manager = try Manager() { error in
+				self.presentError(error)
+			}
+			self.manager = manager
+			manager.discoveryHandler = { _ in
+				DispatchQueue.main.sync {
+					self.cameraCountLabel.stringValue = "\(manager.configurations.count)"
+				}
+			}
+		} catch {
+			presentError(error)
 		}
 	}
-
-
 }
 
