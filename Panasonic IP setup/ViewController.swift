@@ -43,14 +43,28 @@ class ViewController: NSViewController {
 	}
 }
 
-func format(_ address: IPv4Address) -> String {
-	return address.map(String.init).joined(separator: ".")
+func getNetmask(from address: IPv4Address) -> UInt8 {
+	var netmask = UInt8(0)
+	for byte in address {
+		switch byte {
+		case 255: netmask += 8
+		case 1..<255: return netmask + UInt8(8 - log2(Double(~byte) + 1))
+		default: return netmask
+		}
+	}
+	return netmask
 }
 
 class ConfigurationWrapper: NSObject {
 	let configuration: CameraConfiguration
 	init(with original: CameraConfiguration) {
 		configuration = original
+		
+		netmask = getNetmask(from: configuration.netmask)
+		ipAddress = IPAddress(bytes: configuration.ipV4address)
+		gateway = IPAddress(bytes: configuration.gateway)
+		primaryDNS = IPAddress(bytes: configuration.primaryDNS)
+		secondaryDNS = IPAddress(bytes: configuration.secondaryDNS)
 	}
 	
 	@objc dynamic var model: String { return configuration.model }
@@ -64,9 +78,38 @@ class ConfigurationWrapper: NSObject {
 			.joined(separator: ":")
 	}
 	
-	@objc dynamic var ipAddress: String { return format(configuration.ipV4address)}
-	@objc dynamic var gateway: String { return format(configuration.gateway)}
-	@objc dynamic var netmask: String { return format(configuration.netmask)}
-	@objc dynamic var dns1: String { return format(configuration.primaryDNS)}
-	@objc dynamic var dns2: String { return format(configuration.secondaryDNS)}
+	@objc dynamic var ipAddress: IPAddress
+	@objc dynamic var gateway: IPAddress
+	@objc dynamic var primaryDNS: IPAddress
+	@objc dynamic var secondaryDNS: IPAddress
+	@objc dynamic var netmask: UInt8 {
+		willSet { if newValue != netmask {willChangeValue(for: \.netmaskString)} }
+		didSet  { if oldValue != netmask { didChangeValue(for: \.netmaskString)} }
+	}
+	
+	@objc dynamic var netmaskString: String {
+		return netmaskBytes
+			.map(String.init)
+			.joined(separator: ".") + " (\(netmask))"
+	}
+	
+	var netmaskBytes: [UInt8] {
+		let byte1: UInt8 = ~(0xff >> netmask)
+		let byte2: UInt8 = ~(0xff >> (netmask - min(netmask, 8)) )
+		let byte3: UInt8 = ~(0xff >> (netmask - min(netmask, 16)) )
+		let byte4: UInt8 = ~(0xff >> (netmask - min(netmask, 24)) )
+		return [byte1, byte2, byte3, byte4]
+	}
+}
+
+class IPAddress: NSObject {
+	@objc dynamic var byte0, byte1, byte2, byte3: UInt8
+
+	init(bytes: [UInt8]) {
+		(byte0, byte1, byte2, byte3) = (bytes[0], bytes[1], bytes[2], bytes[3])
+	}
+	
+	var bytes: [UInt8] {
+		return [byte0, byte1, byte2, byte3]
+	}
 }
