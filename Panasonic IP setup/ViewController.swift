@@ -15,7 +15,12 @@ class ViewController: NSViewController {
 	@IBOutlet var cameraArrayController: NSArrayController!
 	
 	@IBAction func refresh(_ sender: Any) {
-		print("refresh")
+		cameraArrayController.remove(contentsOf: cameraArrayController.arrangedObjects as! [Any])
+		do {
+			try manager?.search()
+		} catch {
+			presentError(error)
+		}
 	}
 	
 	override func viewDidLoad() {
