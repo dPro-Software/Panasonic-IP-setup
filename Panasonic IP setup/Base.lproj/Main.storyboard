@@ -883,6 +883,15 @@
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="reconfigure:" target="XfG-lQ-9wD" id="Zc1-dw-c50"/>
+                                                    <binding destination="sBN-xw-V7l" name="enabled" keyPath="selection.hasChanged" id="nU8-CJ-Lio">
+                                                        <dictionary key="options">
+                                                            <integer key="NSMultipleValuesPlaceholder" value="0"/>
+                                                            <integer key="NSNoSelectionPlaceholder" value="0"/>
+                                                        </dictionary>
+                                                    </binding>
+                                                </connections>
                                             </button>
                                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKO-1i-js6">
                                                 <rect key="frame" x="20" y="61" width="300" height="285"/>

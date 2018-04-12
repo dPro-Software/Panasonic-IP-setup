@@ -19,7 +19,23 @@ class ViewController: NSViewController {
 		do {
 			try manager?.search()
 		} catch {
-			presentError(error)
+			DispatchQueue.main.async {
+				self.presentError(error)
+			}
+		}
+	}
+	
+	@IBAction func reconfigure(_ sender: Any) {
+		if let wrapper = cameraArrayController.selectedObjects.first as? ConfigurationWrapper {
+			do {
+				try manager?.set(configuration: wrapper.currentConfiguration)
+			} catch {
+				DispatchQueue.main.async {
+					self.presentError(error)
+				}
+			}
+		} else {
+			print("no config selected")
 		}
 	}
 	
@@ -28,7 +44,9 @@ class ViewController: NSViewController {
 
 		do {
 			let manager = try Manager() { error in
-				self.presentError(error)
+				DispatchQueue.main.async {
+					self.presentError(error)
+				}
 			}
 			self.manager = manager
 			manager.discoveryHandler = { configuration in
@@ -56,23 +74,56 @@ func getNetmask(from address: IPv4Address) -> UInt8 {
 }
 
 class ConfigurationWrapper: NSObject {
-	let configuration: CameraConfiguration
+	let originalConfiguration: CameraConfiguration
 	init(with original: CameraConfiguration) {
-		configuration = original
+		originalConfiguration = original
 		
-		netmask = getNetmask(from: configuration.netmask)
-		ipAddress = IPAddress(bytes: configuration.ipV4address)
-		gateway = IPAddress(bytes: configuration.gateway)
-		primaryDNS = IPAddress(bytes: configuration.primaryDNS)
-		secondaryDNS = IPAddress(bytes: configuration.secondaryDNS)
+		netmask = getNetmask(from: originalConfiguration.netmask)
+		ipAddress = IPAddress(bytes: originalConfiguration.ipV4address)
+		gateway = IPAddress(bytes: originalConfiguration.gateway)
+		primaryDNS = IPAddress(bytes: originalConfiguration.primaryDNS)
+		secondaryDNS = IPAddress(bytes: originalConfiguration.secondaryDNS)
 	}
 	
-	@objc dynamic var model: String { return configuration.model }
-	@objc dynamic var name: String { return configuration.name }
-	@objc dynamic var port: UInt16 { return configuration.port }
+	var currentConfiguration: CameraConfiguration {
+		return CameraConfiguration(
+			macAddress: originalConfiguration.macAddress,
+			ipV4address: ipAddress.bytes,
+			netmask: netmaskBytes,
+			gateway: gateway.bytes,
+			primaryDNS: primaryDNS.bytes,
+			secondaryDNS: secondaryDNS.bytes,
+			port: port,
+			model: model,
+			name: name
+		)
+	}
+	
+	@objc dynamic var hasChanged: Bool {
+		return currentConfiguration != originalConfiguration
+	}
+	
+	override class func keyPathsForValuesAffectingValue(forKey key: String) -> Set<String> {
+		if key == "hasChanged" {
+			return [
+				"port",
+				"ipAddress.byte0", "ipAddress.byte1", "ipAddress.byte2", "ipAddress.byte3",
+				"gateway.byte0", "gateway.byte1", "gateway.byte2", "gateway.byte3",
+				"primaryDNS.byte0", "primaryDNS.byte1", "primaryDNS.byte2", "primaryDNS.byte3",
+				"secondaryDNS.byte0", "secondaryDNS.byte1", "secondaryDNS.byte2", "secondaryDNS.byte3",
+				"netmask.byte0", "netmask.byte1", "netmask.byte2", "netmask.byte3"
+			]
+		} else {
+			return super.keyPathsForValuesAffectingValue(forKey: key)
+		}
+	}
+	
+	@objc dynamic var model: String { return originalConfiguration.model }
+	@objc dynamic var name: String { return originalConfiguration.name }
+	@objc dynamic var port: UInt16 { return originalConfiguration.port }
 	
 	@objc dynamic var macAddress: String {
-		return configuration
+		return originalConfiguration
 			.macAddress
 			.map { String(format: "%02X", $0) }
 			.joined(separator: ":")
