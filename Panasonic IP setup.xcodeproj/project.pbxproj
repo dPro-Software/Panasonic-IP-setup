@@ -106,6 +106,7 @@
 		7406F50F207ED18F00AA0223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PanasonicEasyIPsetupBlueSocket.xcodeproj; path = framework/PanasonicEasyIPsetupBlueSocket.xcodeproj; sourceTree = "<group>"; };
 		7406F542207ED4AC00AA0223 /* Panasonic IP setup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Panasonic IP setup.entitlements"; sourceTree = "<group>"; };
+		7443021420800ED8005D4E24 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +138,7 @@
 		7406F4E3207ED18B00AA0223 = {
 			isa = PBXGroup;
 			children = (
+				7443021420800ED8005D4E24 /* Readme.md */,
 				7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */,
 				7406F4EE207ED18C00AA0223 /* Panasonic IP setup */,
 				7406F501207ED18F00AA0223 /* Panasonic IP setupTests */,
