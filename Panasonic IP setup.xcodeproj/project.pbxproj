@@ -104,7 +104,7 @@
 		7406F509207ED18F00AA0223 /* Panasonic IP setupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panasonic IP setupUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7406F50D207ED18F00AA0223 /* Panasonic_IP_setupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panasonic_IP_setupUITests.swift; sourceTree = "<group>"; };
 		7406F50F207ED18F00AA0223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PanasonicEasyIPsetupBlueSocket.xcodeproj; path = ../PanasonicEasyIPsetupBlueSocket/PanasonicEasyIPsetupBlueSocket.xcodeproj; sourceTree = "<group>"; };
+		7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PanasonicEasyIPsetupBlueSocket.xcodeproj; path = framework/PanasonicEasyIPsetupBlueSocket.xcodeproj; sourceTree = "<group>"; };
 		7406F542207ED4AC00AA0223 /* Panasonic IP setup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Panasonic IP setup.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
