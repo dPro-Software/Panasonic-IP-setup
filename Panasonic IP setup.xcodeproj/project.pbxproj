@@ -15,6 +15,22 @@
 		7406F50E207ED18F00AA0223 /* Panasonic_IP_setupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406F50D207ED18F00AA0223 /* Panasonic_IP_setupUITests.swift */; };
 		7406F53D207ED23400AA0223 /* PanasonicEasyIPsetupBlueSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F52B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.framework */; };
 		7406F53E207ED23400AA0223 /* PanasonicEasyIPsetupBlueSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F52B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		743967A02080B3E7002D5F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7439679F2080B3E7002D5F77 /* AppDelegate.swift */; };
+		743967A22080B3E7002D5F77 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743967A12080B3E7002D5F77 /* MasterViewController.swift */; };
+		743967A42080B3E7002D5F77 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743967A32080B3E7002D5F77 /* DetailViewController.swift */; };
+		743967A72080B3E7002D5F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743967A52080B3E7002D5F77 /* Main.storyboard */; };
+		743967A92080B3E8002D5F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743967A82080B3E8002D5F77 /* Assets.xcassets */; };
+		743967AC2080B3E8002D5F77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743967AA2080B3E8002D5F77 /* LaunchScreen.storyboard */; };
+		743967B72080B3E8002D5F77 /* IP_SetupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743967B62080B3E8002D5F77 /* IP_SetupTests.swift */; };
+		743967C22080B3E8002D5F77 /* IP_SetupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743967C12080B3E8002D5F77 /* IP_SetupUITests.swift */; };
+		745E2BD72080BC4F003192CF /* PanasonicEasyIPsetupBlueSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F52B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.framework */; };
+		745E2BD82080BC4F003192CF /* PanasonicEasyIPsetupBlueSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F52B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		745E2BE42080BDC6003192CF /* NetUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F529207ED20500AA0223 /* NetUtils.framework */; };
+		745E2BE52080BDC6003192CF /* NetUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F529207ED20500AA0223 /* NetUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		745E2BE82080BE02003192CF /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F531207ED20500AA0223 /* Socket.framework */; };
+		745E2BE92080BE02003192CF /* Socket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F531207ED20500AA0223 /* Socket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		745E2BEC2080BE02003192CF /* PanasonicEasyIPsetupCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F52F207ED20500AA0223 /* PanasonicEasyIPsetupCore.framework */; };
+		745E2BED2080BE02003192CF /* PanasonicEasyIPsetupCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F52F207ED20500AA0223 /* PanasonicEasyIPsetupCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +90,48 @@
 			remoteGlobalIDString = "PanasonicEasyIPsetupBlueSocket::PanasonicEasyIPsetupBlueSocket";
 			remoteInfo = PanasonicEasyIPsetupBlueSocket;
 		};
+		743967B32080B3E8002D5F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7406F4E4207ED18B00AA0223 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7439679C2080B3E7002D5F77;
+			remoteInfo = "IP Setup";
+		};
+		743967BE2080B3E8002D5F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7406F4E4207ED18B00AA0223 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7439679C2080B3E7002D5F77;
+			remoteInfo = "IP Setup";
+		};
+		745E2BD92080BC4F003192CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "PanasonicEasyIPsetupBlueSocket::PanasonicEasyIPsetupBlueSocket";
+			remoteInfo = PanasonicEasyIPsetupBlueSocket;
+		};
+		745E2BE62080BDC6003192CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "NetUtils::NetUtils";
+			remoteInfo = NetUtils;
+		};
+		745E2BEA2080BE02003192CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "Socket::Socket";
+			remoteInfo = Socket;
+		};
+		745E2BEE2080BE02003192CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "PanasonicEasyIPsetupCore::PanasonicEasyIPsetupCore";
+			remoteInfo = PanasonicEasyIPsetupCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,6 +142,20 @@
 			dstSubfolderSpec = 10;
 			files = (
 				7406F53E207ED23400AA0223 /* PanasonicEasyIPsetupBlueSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		745E2BDB2080BC4F003192CF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				745E2BE92080BE02003192CF /* Socket.framework in Embed Frameworks */,
+				745E2BD82080BC4F003192CF /* PanasonicEasyIPsetupBlueSocket.framework in Embed Frameworks */,
+				745E2BE52080BDC6003192CF /* NetUtils.framework in Embed Frameworks */,
+				745E2BED2080BE02003192CF /* PanasonicEasyIPsetupCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +178,20 @@
 		7406F50F207ED18F00AA0223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PanasonicEasyIPsetupBlueSocket.xcodeproj; path = framework/PanasonicEasyIPsetupBlueSocket.xcodeproj; sourceTree = "<group>"; };
 		7406F542207ED4AC00AA0223 /* Panasonic IP setup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Panasonic IP setup.entitlements"; sourceTree = "<group>"; };
+		7439679D2080B3E7002D5F77 /* IP Setup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IP Setup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7439679F2080B3E7002D5F77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		743967A12080B3E7002D5F77 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		743967A32080B3E7002D5F77 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		743967A62080B3E7002D5F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		743967A82080B3E8002D5F77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		743967AB2080B3E8002D5F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		743967AD2080B3E8002D5F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		743967B22080B3E8002D5F77 /* IP SetupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IP SetupTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		743967B62080B3E8002D5F77 /* IP_SetupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IP_SetupTests.swift; sourceTree = "<group>"; };
+		743967B82080B3E8002D5F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		743967BD2080B3E8002D5F77 /* IP SetupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IP SetupUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		743967C12080B3E8002D5F77 /* IP_SetupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IP_SetupUITests.swift; sourceTree = "<group>"; };
+		743967C32080B3E8002D5F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7443021420800ED8005D4E24 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +218,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7439679A2080B3E7002D5F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745E2BE82080BE02003192CF /* Socket.framework in Frameworks */,
+				745E2BD72080BC4F003192CF /* PanasonicEasyIPsetupBlueSocket.framework in Frameworks */,
+				745E2BE42080BDC6003192CF /* NetUtils.framework in Frameworks */,
+				745E2BEC2080BE02003192CF /* PanasonicEasyIPsetupCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743967AF2080B3E8002D5F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743967BA2080B3E8002D5F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -143,7 +254,11 @@
 				7406F4EE207ED18C00AA0223 /* Panasonic IP setup */,
 				7406F501207ED18F00AA0223 /* Panasonic IP setupTests */,
 				7406F50C207ED18F00AA0223 /* Panasonic IP setupUITests */,
+				7439679E2080B3E7002D5F77 /* IP Setup */,
+				743967B52080B3E8002D5F77 /* IP SetupTests */,
+				743967C02080B3E8002D5F77 /* IP SetupUITests */,
 				7406F4ED207ED18C00AA0223 /* Products */,
+				745E2BD02080BBDF003192CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +268,9 @@
 				7406F4EC207ED18C00AA0223 /* Panasonic IP setup.app */,
 				7406F4FE207ED18F00AA0223 /* Panasonic IP setupTests.xctest */,
 				7406F509207ED18F00AA0223 /* Panasonic IP setupUITests.xctest */,
+				7439679D2080B3E7002D5F77 /* IP Setup.app */,
+				743967B22080B3E8002D5F77 /* IP SetupTests.xctest */,
+				743967BD2080B3E8002D5F77 /* IP SetupUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,6 +317,45 @@
 				7406F531207ED20500AA0223 /* Socket.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7439679E2080B3E7002D5F77 /* IP Setup */ = {
+			isa = PBXGroup;
+			children = (
+				7439679F2080B3E7002D5F77 /* AppDelegate.swift */,
+				743967A12080B3E7002D5F77 /* MasterViewController.swift */,
+				743967A32080B3E7002D5F77 /* DetailViewController.swift */,
+				743967A52080B3E7002D5F77 /* Main.storyboard */,
+				743967A82080B3E8002D5F77 /* Assets.xcassets */,
+				743967AA2080B3E8002D5F77 /* LaunchScreen.storyboard */,
+				743967AD2080B3E8002D5F77 /* Info.plist */,
+			);
+			path = "IP Setup";
+			sourceTree = "<group>";
+		};
+		743967B52080B3E8002D5F77 /* IP SetupTests */ = {
+			isa = PBXGroup;
+			children = (
+				743967B62080B3E8002D5F77 /* IP_SetupTests.swift */,
+				743967B82080B3E8002D5F77 /* Info.plist */,
+			);
+			path = "IP SetupTests";
+			sourceTree = "<group>";
+		};
+		743967C02080B3E8002D5F77 /* IP SetupUITests */ = {
+			isa = PBXGroup;
+			children = (
+				743967C12080B3E8002D5F77 /* IP_SetupUITests.swift */,
+				743967C32080B3E8002D5F77 /* Info.plist */,
+			);
+			path = "IP SetupUITests";
+			sourceTree = "<group>";
+		};
+		745E2BD02080BBDF003192CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +416,64 @@
 			productReference = 7406F509207ED18F00AA0223 /* Panasonic IP setupUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7439679C2080B3E7002D5F77 /* IP Setup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 743967C42080B3E8002D5F77 /* Build configuration list for PBXNativeTarget "IP Setup" */;
+			buildPhases = (
+				743967992080B3E7002D5F77 /* Sources */,
+				7439679A2080B3E7002D5F77 /* Frameworks */,
+				7439679B2080B3E7002D5F77 /* Resources */,
+				745E2BDB2080BC4F003192CF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				745E2BDA2080BC4F003192CF /* PBXTargetDependency */,
+				745E2BE72080BDC6003192CF /* PBXTargetDependency */,
+				745E2BEB2080BE02003192CF /* PBXTargetDependency */,
+				745E2BEF2080BE02003192CF /* PBXTargetDependency */,
+			);
+			name = "IP Setup";
+			productName = "IP Setup";
+			productReference = 7439679D2080B3E7002D5F77 /* IP Setup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		743967B12080B3E8002D5F77 /* IP SetupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 743967C72080B3E8002D5F77 /* Build configuration list for PBXNativeTarget "IP SetupTests" */;
+			buildPhases = (
+				743967AE2080B3E8002D5F77 /* Sources */,
+				743967AF2080B3E8002D5F77 /* Frameworks */,
+				743967B02080B3E8002D5F77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				743967B42080B3E8002D5F77 /* PBXTargetDependency */,
+			);
+			name = "IP SetupTests";
+			productName = "IP SetupTests";
+			productReference = 743967B22080B3E8002D5F77 /* IP SetupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		743967BC2080B3E8002D5F77 /* IP SetupUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 743967CA2080B3E8002D5F77 /* Build configuration list for PBXNativeTarget "IP SetupUITests" */;
+			buildPhases = (
+				743967B92080B3E8002D5F77 /* Sources */,
+				743967BA2080B3E8002D5F77 /* Frameworks */,
+				743967BB2080B3E8002D5F77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				743967BF2080B3E8002D5F77 /* PBXTargetDependency */,
+			);
+			name = "IP SetupUITests";
+			productName = "IP SetupUITests";
+			productReference = 743967BD2080B3E8002D5F77 /* IP SetupUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -285,6 +500,17 @@
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = 7406F4EB207ED18C00AA0223;
 					};
+					7439679C2080B3E7002D5F77 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					743967B12080B3E8002D5F77 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 7439679C2080B3E7002D5F77;
+					};
+					743967BC2080B3E8002D5F77 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 7439679C2080B3E7002D5F77;
+					};
 				};
 			};
 			buildConfigurationList = 7406F4E7207ED18B00AA0223 /* Build configuration list for PBXProject "Panasonic IP setup" */;
@@ -309,6 +535,9 @@
 				7406F4EB207ED18C00AA0223 /* Panasonic IP setup */,
 				7406F4FD207ED18F00AA0223 /* Panasonic IP setupTests */,
 				7406F508207ED18F00AA0223 /* Panasonic IP setupUITests */,
+				7439679C2080B3E7002D5F77 /* IP Setup */,
+				743967B12080B3E8002D5F77 /* IP SetupTests */,
+				743967BC2080B3E8002D5F77 /* IP SetupUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -375,6 +604,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7439679B2080B3E7002D5F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743967AC2080B3E8002D5F77 /* LaunchScreen.storyboard in Resources */,
+				743967A92080B3E8002D5F77 /* Assets.xcassets in Resources */,
+				743967A72080B3E7002D5F77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743967B02080B3E8002D5F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743967BB2080B3E8002D5F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -403,6 +656,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		743967992080B3E7002D5F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743967A42080B3E7002D5F77 /* DetailViewController.swift in Sources */,
+				743967A22080B3E7002D5F77 /* MasterViewController.swift in Sources */,
+				743967A02080B3E7002D5F77 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743967AE2080B3E8002D5F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743967B72080B3E8002D5F77 /* IP_SetupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743967B92080B3E8002D5F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743967C22080B3E8002D5F77 /* IP_SetupUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -421,6 +700,36 @@
 			name = PanasonicEasyIPsetupBlueSocket;
 			targetProxy = 7406F53F207ED23400AA0223 /* PBXContainerItemProxy */;
 		};
+		743967B42080B3E8002D5F77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7439679C2080B3E7002D5F77 /* IP Setup */;
+			targetProxy = 743967B32080B3E8002D5F77 /* PBXContainerItemProxy */;
+		};
+		743967BF2080B3E8002D5F77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7439679C2080B3E7002D5F77 /* IP Setup */;
+			targetProxy = 743967BE2080B3E8002D5F77 /* PBXContainerItemProxy */;
+		};
+		745E2BDA2080BC4F003192CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PanasonicEasyIPsetupBlueSocket;
+			targetProxy = 745E2BD92080BC4F003192CF /* PBXContainerItemProxy */;
+		};
+		745E2BE72080BDC6003192CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetUtils;
+			targetProxy = 745E2BE62080BDC6003192CF /* PBXContainerItemProxy */;
+		};
+		745E2BEB2080BE02003192CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Socket;
+			targetProxy = 745E2BEA2080BE02003192CF /* PBXContainerItemProxy */;
+		};
+		745E2BEF2080BE02003192CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PanasonicEasyIPsetupCore;
+			targetProxy = 745E2BEE2080BE02003192CF /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -430,6 +739,22 @@
 				7406F4F6207ED18E00AA0223 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		743967A52080B3E7002D5F77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				743967A62080B3E7002D5F77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		743967AA2080B3E8002D5F77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				743967AB2080B3E8002D5F77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -562,7 +887,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.Panasonic-IP-setup";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.Panasonic-IP-setup.desktop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -582,7 +907,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.Panasonic-IP-setup";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.Panasonic-IP-setup.desktop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -670,6 +995,147 @@
 			};
 			name = Release;
 		};
+		743967C52080B3E8002D5F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				INFOPLIST_FILE = "IP Setup/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.IP-Setup";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		743967C62080B3E8002D5F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				INFOPLIST_FILE = "IP Setup/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.IP-Setup";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		743967C82080B3E8002D5F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				INFOPLIST_FILE = "IP SetupTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.IP-SetupTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IP Setup.app/IP Setup";
+			};
+			name = Debug;
+		};
+		743967C92080B3E8002D5F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				INFOPLIST_FILE = "IP SetupTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.IP-SetupTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IP Setup.app/IP Setup";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		743967CB2080B3E8002D5F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				INFOPLIST_FILE = "IP SetupUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.IP-SetupUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "IP Setup";
+			};
+			name = Debug;
+		};
+		743967CC2080B3E8002D5F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				INFOPLIST_FILE = "IP SetupUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.IP-SetupUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "IP Setup";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -705,6 +1171,33 @@
 			buildConfigurations = (
 				7406F519207ED18F00AA0223 /* Debug */,
 				7406F51A207ED18F00AA0223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		743967C42080B3E8002D5F77 /* Build configuration list for PBXNativeTarget "IP Setup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				743967C52080B3E8002D5F77 /* Debug */,
+				743967C62080B3E8002D5F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		743967C72080B3E8002D5F77 /* Build configuration list for PBXNativeTarget "IP SetupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				743967C82080B3E8002D5F77 /* Debug */,
+				743967C92080B3E8002D5F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		743967CA2080B3E8002D5F77 /* Build configuration list for PBXNativeTarget "IP SetupUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				743967CB2080B3E8002D5F77 /* Debug */,
+				743967CC2080B3E8002D5F77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
