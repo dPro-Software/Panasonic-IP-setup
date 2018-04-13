@@ -7,8 +7,8 @@ macOS & iOS application to discover and configure network settings of Panasonic 
 
 | Swift                                                        | Xcode |
 | ------------------------------------------------------------ | ----- |
-| ```Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)``` | ```Version 9.3 (9E145)``` |
-| ``` Target: x86_64-apple-darwin17.5.0 ```  | ```macOS 10.13.4 (17E199)``` |
+| `Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)` | `Version 9.3 (9E145)` |
+| `Target: x86_64-apple-darwin17.5.0`  | `macOS 10.13.4 (17E199)` |
 
 To start developing clone this repo with all its submodules
 ```shell

@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 		splitViewController.delegate = self
 		
 		do {
-			manager = try Manager {
+			manager = try Manager(on: DispatchQueue.global(qos: .userInitiated)) {
 				print($0)
 			}
 		} catch {

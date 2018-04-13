@@ -44,6 +44,7 @@ class MasterViewController: UITableViewController {
 	@objc func searchCameras(_ sender: Any?) {
 		do {
 			objects.removeAll(keepingCapacity: true)
+			tableView.reloadData()
 			try manager?.search()
 			print("DiscoveryMessage is sent")
 		} catch {
