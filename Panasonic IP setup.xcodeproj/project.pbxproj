@@ -23,6 +23,12 @@
 		743967AC2080B3E8002D5F77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743967AA2080B3E8002D5F77 /* LaunchScreen.storyboard */; };
 		743967B72080B3E8002D5F77 /* IP_SetupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743967B62080B3E8002D5F77 /* IP_SetupTests.swift */; };
 		743967C22080B3E8002D5F77 /* IP_SetupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743967C12080B3E8002D5F77 /* IP_SetupUITests.swift */; };
+		745DA55E208A0ABD002D144D /* PanasonicEasyIPsetupCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F52F207ED20500AA0223 /* PanasonicEasyIPsetupCore.framework */; };
+		745DA55F208A0ABD002D144D /* PanasonicEasyIPsetupCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F52F207ED20500AA0223 /* PanasonicEasyIPsetupCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		745DA562208A0B00002D144D /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F531207ED20500AA0223 /* Socket.framework */; };
+		745DA563208A0B00002D144D /* Socket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F531207ED20500AA0223 /* Socket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		745DA566208A0B00002D144D /* NetUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F529207ED20500AA0223 /* NetUtils.framework */; };
+		745DA567208A0B00002D144D /* NetUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F529207ED20500AA0223 /* NetUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		745E2BD72080BC4F003192CF /* PanasonicEasyIPsetupBlueSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F52B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.framework */; };
 		745E2BD82080BC4F003192CF /* PanasonicEasyIPsetupBlueSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F52B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		745E2BE42080BDC6003192CF /* NetUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7406F529207ED20500AA0223 /* NetUtils.framework */; };
@@ -104,6 +110,27 @@
 			remoteGlobalIDString = 7439679C2080B3E7002D5F77;
 			remoteInfo = "IP Setup";
 		};
+		745DA560208A0ABD002D144D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "PanasonicEasyIPsetupCore::PanasonicEasyIPsetupCore";
+			remoteInfo = PanasonicEasyIPsetupCore;
+		};
+		745DA564208A0B00002D144D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "Socket::Socket";
+			remoteInfo = Socket;
+		};
+		745DA568208A0B00002D144D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "NetUtils::NetUtils";
+			remoteInfo = NetUtils;
+		};
 		745E2BD92080BC4F003192CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7406F51B207ED20500AA0223 /* PanasonicEasyIPsetupBlueSocket.xcodeproj */;
@@ -141,7 +168,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				745DA563208A0B00002D144D /* Socket.framework in Embed Frameworks */,
 				7406F53E207ED23400AA0223 /* PanasonicEasyIPsetupBlueSocket.framework in Embed Frameworks */,
+				745DA567208A0B00002D144D /* NetUtils.framework in Embed Frameworks */,
+				745DA55F208A0ABD002D144D /* PanasonicEasyIPsetupCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +230,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745DA562208A0B00002D144D /* Socket.framework in Frameworks */,
 				7406F53D207ED23400AA0223 /* PanasonicEasyIPsetupBlueSocket.framework in Frameworks */,
+				745DA566208A0B00002D144D /* NetUtils.framework in Frameworks */,
+				745DA55E208A0ABD002D144D /* PanasonicEasyIPsetupCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +407,9 @@
 			);
 			dependencies = (
 				7406F540207ED23400AA0223 /* PBXTargetDependency */,
+				745DA561208A0ABD002D144D /* PBXTargetDependency */,
+				745DA565208A0B00002D144D /* PBXTargetDependency */,
+				745DA569208A0B00002D144D /* PBXTargetDependency */,
 			);
 			name = "Panasonic IP setup";
 			productName = "Panasonic IP setup";
@@ -709,6 +745,21 @@
 			isa = PBXTargetDependency;
 			target = 7439679C2080B3E7002D5F77 /* IP Setup */;
 			targetProxy = 743967BE2080B3E8002D5F77 /* PBXContainerItemProxy */;
+		};
+		745DA561208A0ABD002D144D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PanasonicEasyIPsetupCore;
+			targetProxy = 745DA560208A0ABD002D144D /* PBXContainerItemProxy */;
+		};
+		745DA565208A0B00002D144D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Socket;
+			targetProxy = 745DA564208A0B00002D144D /* PBXContainerItemProxy */;
+		};
+		745DA569208A0B00002D144D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetUtils;
+			targetProxy = 745DA568208A0B00002D144D /* PBXContainerItemProxy */;
 		};
 		745E2BDA2080BC4F003192CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
